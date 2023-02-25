@@ -1,0 +1,122 @@
+                                Question 1
+
+
+MongoDB is a non-relational database management system (DBMS) that uses documents to 
+store data. It is an open source, document-oriented database designed for scalability 
+and flexibility. Non-relational databases are databases that do not use the traditional 
+table-based relational model employed by SQL databases. Instead, they store data in a 
+more flexible format, such as JSON or XML.
+MongoDB is preferred over SQL databases in scenarios where scalability and flexibility are 
+important. MongoDB can easily scale horizontally, meaning it can easily add more servers
+to handle increased workloads. Additionally, MongoDB's document-based structure allows
+for greater flexibility when it comes to data modeling and schema design. This makes it
+easier to store and query complex data structures without having to define a rigid 
+schema beforehand.
+
+
+                                Question 2
+
+
+MongoDB is a document-oriented NoSQL database that is used for storing and managing large 
+datasets. It is an open-source database that provides high performance, scalability, and
+availability.
+
+Features of MongoDB:
+1. Document-Oriented Storage: MongoDB stores data in the form of documents, which are
+JSON-like objects with dynamic schemas. This makes it easier to store and query data 
+as compared to traditional relational databases.
+2. High Performance: MongoDB uses a memory-mapped storage engine to achieve high performance.
+It also supports indexing, which helps in faster query execution.
+3. Scalability: MongoDB is highly scalable and can be easily scaled up or down as per the
+requirements of the application. It also supports sharding, which allows for horizontal 
+scaling of the database.
+4. High Availability: MongoDB provides high availability through its replica sets feature, 
+which ensures that there is always a secondary node available in case of failure of the 
+primary node.
+5. Rich Query Language: MongoDB supports a rich query language that allows developers to
+write complex queries with ease. This makes it easier to retrieve data from the 
+database quickly and efficiently.
+
+
+                                    Question 3
+
+
+
+Code to connect MongoDB to Python :
+import pymongo
+#creating a connection to MongoDB
+myclient = pymongo.MongoClient("mongodb://localhost:27017/")
+#creating a database in MongoDB
+mydb = myclient["mydatabase"] 
+#creating a collection in MongoDB 
+mycol = mydb["customers"]
+
+
+
+                                    Question 4
+
+
+# Insert one record
+
+my_record = {
+    "name": "John Doe",
+    "age": 25,
+    "location": "New York"
+}
+
+result = my_collection.insert_one(my_record)
+print("Inserted record: ", result.inserted_id)
+
+# Insert many records 
+records = [{ 
+    "name": "Jane Doe", 
+    "age": 30, 
+    "location": "Los Angeles" 
+}, { 
+    "name": "Jack Smith", 
+    "age": 35, 
+    "location": "Chicago" 
+}, { 
+    "name": "Jill Johnson", 
+    "age": 40, 
+    "location": "Houston"  }]  
+
+ result = my_collection.insert_many(records)  
+
+ print("Inserted records: ", result.inserted_ids)  
+
+ # Find one record  
+
+ record = my_collection.find_one()  
+
+ print("Found record: ", record)  
+
+ # Find all records  
+
+ records = my_collection.find()  
+
+for record in records:  
+
+print("Found record: ", record)
+
+
+                                    Question 5
+
+                        
+The sort() method in MongoDB is used to sort the documents in a collection based on a 
+specified field or fields. The sort() method takes an argument which is a list of 
+fields along with their respective sorting order.
+For example, if we have a collection called "users" with documents that contain
+the fields "name", "age", and "location", we can use the sort() method to sort 
+the documents by age in ascending order:
+
+db.users.find().sort( { age: 1 } )
+
+
+                                    Question 6
+
+Delete_one() is used to delete a single document from a collection. 
+Delete_many() is used to delete multiple documents from a collection. 
+Drop() is used to delete an entire collection, including all of its documents. 
+These methods are useful for removing data that is no longer needed or for 
+cleaning up a database before performing maintenance tasks.
