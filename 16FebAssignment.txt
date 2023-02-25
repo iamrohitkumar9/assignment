@@ -1,0 +1,116 @@
+                                    Question 1 :
+
+A database is a structured collection of data that is stored and organized in a 
+computer system. It is used to store, manage, and retrieve data.
+SQL (Structured Query Language) databases are relational databases that use 
+SQL to store and retrieve data. They are organized into tables with columns and rows,
+ and use Structured Query Language (SQL) for defining and manipulating the data.
+NoSQL databases are non-relational databases that do not use SQL to store and 
+retrieve data. They are often document-oriented, meaning they store data in
+documents instead of tables with columns and rows. NoSQL databases are often 
+used for large datasets that require high scalability and flexibility.
+
+                                    Question 2:
+
+DDL stands for Data Definition Language. It is a language used to define the structure of a 
+database, including the creation, modification, and deletion of tables and other objects. 
+CREATE is used to create a new table or other object in the database; DROP is used to 
+delete an existing table or other object; ALTER is used to modify an existing table or 
+other object; and TRUNCATE is used to delete all records from a table.
+
+For example, if you wanted to create a new table called "Employees" in your database, 
+you would use the CREATE statement:
+
+CREATE TABLE Employees (
+  EmployeeID INT PRIMARY KEY, 
+  FirstName VARCHAR(50), 
+  LastName VARCHAR(50), 
+  Department VARCHAR(50)
+);
+
+For dropping the table :
+DROP TABLE table_name;
+
+For adding the columns to the table :
+ALTER TABLE table_name
+ADD Email varchar(255);
+
+The TRUNCATE TABLE command deletes the data inside a table, but not the table itself.
+The following SQL truncates the table "Categories": 
+TRUNCATE TABLE Categories;
+
+                                    Question 3:
+
+DML stands for Data Manipulation Language. It is a language used to manipulate data in a
+ database. DML includes commands such as INSERT, UPDATE, and DELETE.
+
+INSERT: The INSERT command is used to add new records to a table. For example, 
+if you wanted to add a new customer record to the “Customers” table, you would
+use the following command:
+
+INSERT INTO Customers (Name, Address, Phone) VALUES ('John Doe', '123 Main Street', '555-123-4567');
+
+UPDATE: The UPDATE command is used to modify existing records in a table. 
+For example, if you wanted to update the address of an existing customer record in 
+the “Customers” table, you would use the following command:
+
+UPDATE Customers SET Address = '456 Second Avenue' WHERE Name = 'John Doe';
+
+DELETE: The DELETE command is used to delete existing records from a table. 
+For example, if you wanted to delete an existing customer record from the “Customers” 
+table, you would use the following command: 
+
+DELETE FROM Customers WHERE Name = 'John Doe';
+
+
+                                    Question 4
+
+DQL stands for Data Query Language. It is a language used to query data from a database. 
+SELECT is the most commonly used DQL command and it is used to retrieve data from a database.
+For example, if you wanted to select all the records from a table called "Customers" in a 
+database, you would use the following SELECT statement:
+
+SELECT * FROM Customers;
+
+
+
+                                    Question 5
+
+
+A primary key is a field in a table that uniquely identifies each row/record in a database
+table. It is used to uniquely identify each row/record in a database table. A primary 
+key column cannot contain null values and must contain unique values.
+A foreign key is a field in a table that is used to establish and maintain relationships
+between two tables. It is used to reference the primary key of another table, creating 
+a link between the two tables. Foreign keys can contain null values, but they must also
+be unique within the table they are defined in.
+
+
+                                    Question 6
+
+import mysql.connector
+mydb = mysql.connector.connect(host="localhost", user="root", passwd="password")
+mycursor = mydb.cursor()
+
+The cursor() method is used to create a cursor object which will be used to execute
+SQL statements. 
+The execute() method is used to execute an SQL query on the database. 
+It takes an SQL query as parameter and returns a result set of records from the database. 
+
+
+                                    Question 7
+                                    
+The order of execution of SQL clauses in an SQL query are :
+1. FROM
+2. WHERE
+3. GROUP BY
+4. HAVING
+5. SELECT
+6. ORDER BY
+7. LIMIT
+
+
+
+
+
+
