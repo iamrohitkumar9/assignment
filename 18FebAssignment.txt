@@ -1,0 +1,72 @@
+Question 1 :
+API stands for Application Programming Interface. It is a set of protocols, 
+routines, and tools for building software applications. An API specifies how 
+software components should interact with each other.
+An example of an API in real life is the Google Maps API. 
+This allows developers to embed Google Maps into their own websites and 
+applications, allowing users to view maps and get directions from one place to another.
+
+Question 2 :
+Advantages of using API are :
+1. APIs allow developers to access and integrate the functionality of a system or 
+service into their own applications. This allows them to create more powerful and 
+efficient applications that can be used by a wider range of users.
+2. APIs can also help reduce development time and costs, as developers don’t have to
+build everything from scratch. They can use existing APIs to quickly add features and 
+functionality to their applications.
+3. APIs also make it easier for developers to keep their applications up-to-date with the 
+latest features and bug fixes, as they can simply update the API instead of having to 
+rewrite the entire application.
+4. APIs also make it easier for businesses to monetize their services, as they can charge
+for access or usage of their API. This allows them to generate additional revenue from 
+their services without having to invest in additional development or marketing efforts.
+
+Disadvantages of using API are : 
+1. APIs can be difficult to use, as they require a certain level of technical knowledge
+in order to properly integrate them into an application or system. This can be a barrier 
+for some developers who may not have the necessary skills or resources available. 
+2. APIs are also vulnerable to security risks, as malicious actors may be able to exploit
+them in order to gain access to sensitive data or systems. It is important for developers
+and businesses using APIs to ensure that they are properly secured against these threats. 
+3. Finally, APIs can be expensive, as businesses may need to pay licensing fees in order 
+to use certain third-party APIs or services in their applications or systems.
+
+Question 3 :
+A Web API is an application programming interface (API) that is used to enable communication
+between web applications and servers. It allows developers to access and manipulate data
+from a remote source, such as a web server, in order to create web-based applications.
+The main difference between an API and a Web API is that an API is a set of programming 
+instructions for accessing a software application or service, while a Web API is an 
+interface that enables communication between two different applications over the internet. 
+An API provides the means for two applications to communicate with each other, while a 
+Web API provides the means for two web-based applications to communicate with each other.
+
+Question 4 :
+REST (Representational State Transfer) is an architectural style for designing distributed 
+systems. It is based on a client-server model, where the client sends requests to the server
+and the server responds with data. REST is stateless, meaning that each request from the 
+client contains all of the information necessary for the server to process the request.
+
+SOAP (Simple Object Access Protocol) is a messaging protocol used for exchanging information
+between applications. It uses XML as its message format and relies on other application 
+layer protocols, such as HTTP and SMTP, for message negotiation and transmission. SOAP 
+messages are sent over a network using these protocols and can be used to invoke remote 
+procedures or access web services.
+
+The main shortcoming of SOAP is that it is complex and verbose compared to REST. It requires
+more bandwidth than REST, which can lead to slower response times. Additionally, SOAP does 
+not support caching, which can lead to inefficient use of resources when dealing with large
+datasets.
+
+Question 5 :
+For REST (Representational State Transfer) :
+-> REST is an architectural style for designing distributed systems.
+-> It is based on a client/server model, where the client sends a request to the server and the server responds with data.
+-> REST uses HTTP methods such as GET, POST, PUT, and DELETE to communicate between the client and server.
+-> It is lightweight and does not require complex XML messages or WSDL files.
+
+For SOAP (Simple Object Access Protocol): 
+-> SOAP is a protocol for exchanging information in a decentralized and distributed environment. 
+-> It uses XML messages to communicate between the client and server. 
+-> SOAP requires WSDL files to describe the services available on the server. 
+-> It is more complex than REST and requires more bandwidth for communication.
